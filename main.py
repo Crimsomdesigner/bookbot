@@ -4,6 +4,6 @@ def get_book_text(path_to_file):
     return file_content
 
 def main():
-    get_book_text(books/frankenstein.txt)
+    get_book_text(~/frankenstein.txt)
 
 main()
