@@ -11,6 +11,6 @@ def main():
     file_path = 'books/frankenstein.txt'
     file_contents = get_book_text(file_path)
     num_words = get_word_counts(file_contents)
-    print("Found {num_words} total words")
-    
+    print("Found " + num_words + " total words")
+
 main()
