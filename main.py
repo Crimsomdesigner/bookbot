@@ -22,8 +22,8 @@ def main():
         for char, count in d.items():
             print(f"{char}: {count}")
     print("============= END ===============")
-    print(sys.argv)
-    print("Usage: python3 main.py <path_to_book>")
-    sys.exit(1)
-
+    
+print(sys.argv)
+print("Usage: python3 main.py <path_to_book>")
+sys.exit(1)
 main()
