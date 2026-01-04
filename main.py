@@ -23,5 +23,7 @@ def main():
             #print(f"{char}: {count}")
     #print("============= END ===============")
     print(sys.argv)
+    print("Usage: python3 main.py <path_to_book>")
+    print(sys.exit(1))
 
 main()
