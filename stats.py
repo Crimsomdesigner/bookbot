@@ -11,4 +11,12 @@ def get_char_counts(File_text):
         else:
             char_dict[character] = 1
     return char_dict
-    
+
+def sort_on(dict):
+    return [
+        {char: counts}
+        for char, counts in sorted(
+            dict.items(),
+            key = lambda item: item[1],
+            reverse=True)
+    ]
