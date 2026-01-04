@@ -16,8 +16,8 @@ def main():
     print("----------- Word Count ----------")
     print(f"Found {num_words} total words")
     print("--------- Character Count -------")
-    for dict in char_sorted_list:
-        print(char_sorted_list[dict])
+    for i in range(0, len(char_sorted_list)):
+        print(char_sorted_list[i])
     print("============= END ===============")
 
 main()
