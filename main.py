@@ -3,15 +3,21 @@ def get_book_text(file_path):
         content = file.read()
     return content
 
-from stats import get_word_counts
-from stats import get_char_counts
+from stats import *
 
 def main():
     file_path = 'books/frankenstein.txt'
     file_contents = get_book_text(file_path)
     num_words = get_word_counts(file_contents)
-    f_string = f"Found {num_words} total words"
-    print(f_string)
-    print(get_char_counts(file_contents))
+    character_count_dict = get_char_counts(file_contents)
+    char_sorted_list = sort_on(character_count_dict)
+    print("============ BOOKBOT ============")
+    print(f"Analyzing book found at {file_path}...")
+    print("----------- Word Count ----------")
+    print(f"Found {num_words} total words")
+    print("--------- Character Count -------")
+    for dict in char_sorted_list
+        print(char_sorted_list[dict])
+    print("============= END ===============")
 
 main()
