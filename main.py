@@ -8,7 +8,6 @@ def get_book_text(file_path):
 from stats import *
 
 def main():
-    print(sys.argv)
     file_path = sys.argv[1]
     file_contents = get_book_text(file_path)
     num_words = get_word_counts(file_contents)
@@ -24,6 +23,8 @@ def main():
             print(f"{char}: {count}")
     print("============= END ===============")
 
-print("Usage: python3 main.py <path_to_book>")
+if len(sys.argv) <= 1:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
+
 main()
-sys.exit(1)
